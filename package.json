@@ -1,0 +1,22 @@
+{
+  "name": "fdas-ftw",
+  "version": "0.0.1",
+  "description": "Some demo front-end driven apps using parse, firebase, and hoodie",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HipsterBrown/FDA-demos.git"
+  },
+  "author": "HipsterBrown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HipsterBrown/FDA-demos/issues"
+  },
+  "homepage": "https://github.com/HipsterBrown/FDA-demos",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-jshint": "~0.10.0"
+  }
+}
