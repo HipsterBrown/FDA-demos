@@ -1,0 +1,13 @@
+footer {
+  p {
+    span.power-logo {
+      background-image: url(images/logo.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom center;
+      display: inline-block;
+      @include size(50px);
+      margin-bottom: -.35em;
+    }
+  }
+}
