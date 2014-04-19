@@ -1,0 +1,18 @@
+$fill: darken($base-body-color, 60%);
+
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  fill: $fill;
+}
+.icon-bike {
+  fill: $fill;
+  width: 56px;
+}
+.icon-envelope {
+  fill: $fill;
+}
+.icon-twitter {
+  fill: $fill;
+}

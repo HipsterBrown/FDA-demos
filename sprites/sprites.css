@@ -1,0 +1,16 @@
+.icon {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	fill: #000000;
+}
+.icon-bike {
+	fill: #000000;
+	width: 56px;
+}
+.icon-envelope {
+	fill: #000000;
+}
+.icon-twitter {
+	fill: #000000;
+}

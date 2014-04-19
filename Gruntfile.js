@@ -9,7 +9,8 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'styles/app.css' : 'styles/app.scss'
+          'styles/app.css' : 'styles/app.scss',
+          'firebase/app.css' : 'styles/app.scss'
         }
       }
     },
