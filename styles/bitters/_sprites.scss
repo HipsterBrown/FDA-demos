@@ -8,8 +8,16 @@ $fill: darken($base-body-color, 60%);
 }
 .icon-bike {
   fill: $fill;
-  width: 56px;
+  padding: 0 2px;
+  @include size(68px 38px);
 }
+
+.bike {
+  stroke: black;
+  //fill: none;
+  stroke-width: 0.85;
+}
+
 .icon-envelope {
   fill: $fill;
 }

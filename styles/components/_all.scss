@@ -1,2 +1,24 @@
 @import 'footer';
 @import 'header';
+@import 'states';
+
+* {
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
+}
+
+body {
+  @include box(vertical, start, center);
+  padding: 0 5em;
+}
+
+div.main {
+
+  section.tips {
+
+    article.tip {
+      font-size: 12px;
+    }
+  }
+}
