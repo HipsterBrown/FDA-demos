@@ -29,14 +29,17 @@
       <section class="login-form hide">
         <h2>Please Login, Super Trooper!</h2>
         <p>
-          <label for="username">Username:</label>
-          <input type="text" name="username" id="username">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
         </p>
         <p>
           <label for="password">Password:</label>
           <input type="password" name="password" id="password">
         </p>
         <input type="submit" name="submit" value="I'm Back!">
+        <p>
+          Are you a newber trooper? <button name="signup-button" class="signup">Signup Dude!</button>
+        </p>
       </section>
       <section class="signup-form hide">
         <h2>Sign-Up Here to be a Super Trooper Today!</h2>
@@ -45,10 +48,26 @@
           <input type="text" name="signup-name" id="signup-name" placeholder="i.e. SuppaTroopa13">
         </p>
         <p>
+          <label for="signup-email">Email:</label>
+          <input type="email" name="signup-email" id="signup-email" placeholder="i.e. suppatroopa13@gmail.com">
+        </p>
+        <p>
           <label for="signup-pass">Password:</label>
           <input type="text" name="signup-pass" id="signup-pass" placeholder="i.e. SomethingSecure13%^!">
         </p>
         <input type="submit" name="signup-submit" value="Sign Me Up!">
+      </section>
+      <section class="tip-form hide">
+        <h2>What's Your Hot Tip?</h2>
+        <p>
+          <label for="tip-title">Title:</label>
+          <input type="text" name="tip-title" id="tip-title" placeholder="Titles for Winners!">
+        </p>
+        <p>
+          <label for="tip-content">Tip:</label>
+          <input type="text" name="tip-content" id="tip-content" placeholder="Tipping it up like crazy.">
+        </p>
+        <input type="submit" name="tip-submit" class="tip-submit" value="Tip Off">
       </section>
       <section class="tips">
         <h2>Latest Tips</h2>
@@ -61,7 +80,7 @@
             This is a sample tip about how you should always signal your turns, left or right, to inform other vehicles behind you of your intentions.
           </p>
           <p class="thanks">
-            Thank You <span class="submitter">Leah Rose</span> for the helpful tip!
+            Thank You <span class="author">Leah Rose</span> for the helpful tip!
           </p>
         </article>
       </section>
@@ -80,6 +99,8 @@
     </footer>
 
     <script type="text/javascript" charset="utf-8" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
+    <script type='text/javascript'src='https://cdn.firebase.com/js/simple-login/1.3.2/firebase-simple-login.js'></script>
     <script type="text/javascript" charset="utf-8" src="app.js"></script>
   </body>
 </html>
