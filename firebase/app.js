@@ -14,42 +14,50 @@ $( document ).ready(function() {
     signup.toggleClass('hide');
   });
 
+  //Initialize Firebase connection
   var base = new Firebase('https://brilliant-fire-3777.firebaseio.com');
+
+  //Initialize Firebase Simple Login connection
   var auth = new FirebaseSimpleLogin(base, function(error, user) {
-    
+
   });
 
+  //Create tip list === firebaseio.com/tips
   var tips = base.child('tips');
 
-  var tip1 = tips.child('tip');
+  /*
+    Tip Model
+    title: String
+    content: String
+    author: String
+    submittedOn: DateToString
+  */
 
-  tip1.set({
-    title: 'Title for Winners',
-    content: 'Some sample content for winners to read and troopers to enjoy!',
+  tips.on('child_added', function(tip) {
+    console.log(tip.name());
+    tip = tip.val();
+    var html = '<article class="tip">',
+        contentArea = $('section.tips');
+    html += '<h1 class="title">'+ tip.title +'</h1>';
+    html += '<p class="smaller submitted">Submitted On: <span class="date">'+ tip.submittedOn +'</span></p>';
+    html += '<p class="content">'+ tip.content +'</p>';
+    html += '<p class="thanks">Thank You <span class="author">'+ tip.author +'</span> for the helpful tip!';
+    console.log(html);
+    contentArea.append(html);
+  });
+
+  /*
+  tips.push({
+    title: 'Another title for winners',
+    content: 'How much lorem ipsum text can you stand?',
     author: 'HipsterBrown',
     submittedOn: new Date().toString()
   }, function(error) {
     if (error) {
-      console.log('Tip could not go through because: ' + error);
+      console.log('New tip could not be added, please try again.');
     } else {
-      console.log('Tipped to the max!');
+      console.log('New tip added!');
     }
   });
-
-  tip1.on('value', function(tip) {
-    if (tip.val() === null) {
-      alert('This tip does not exist!');
-    } else {
-      var title = $('article.tip > h1.title'),
-          date = $('article.tip > p > span.date'),
-          content = $('article.tip > p.content'),
-          author = $('article.tip > p.thanks > span.author');
-
-      title.text(tip.val().title);
-      date.text(tip.val().submittedOn);
-      content.text(tip.val().content);
-      author.text(tip.val().author);
-    }
-  });
-
+  */
 });
