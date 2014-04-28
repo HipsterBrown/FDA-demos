@@ -1,0 +1,714 @@
+
+Apache CouchDB has started, time to relax.
+Apache CouchDB 1.5.0 (LogLevel=info) is starting.
+Apache CouchDB has started. Time to relax.
+[info] [<0.31.0>] Apache CouchDB has started on http://127.0.0.1:6003/
+[info] [<0.106.0>] 127.0.0.1 - - GET / 200
+[info] [<0.107.0>] 127.0.0.1 - - HEAD /_users/_all_docs 200
+[info] [<0.108.0>] 127.0.0.1 - - PUT /_config/admins/_hoodie 200
+[info] [<0.153.0>] 127.0.0.1 - - PUT /_config/admins/admin 200
+[info] [<0.155.0>] 127.0.0.1 - - PUT /app 201
+[info] [<0.156.0>] 127.0.0.1 - - PUT /app/_security 200
+[info] [<0.110.0>] 127.0.0.1 - - PUT /app/config 201
+[info] [<0.109.0>] 127.0.0.1 - - PUT /plugins 201
+[info] [<0.121.0>] 127.0.0.1 - - PUT /plugins/_security 200
+[info] [<0.118.0>] 127.0.0.1 - - GET / 200
+[info] [<0.116.0>] 127.0.0.1 - - GET /_users 200
+[info] [<0.119.0>] 127.0.0.1 - - GET /plugins/_all_docs?include_docs=true 200
+[info] [<0.120.0>] 127.0.0.1 - - GET /app/config 200
+[info] [<0.117.0>] 127.0.0.1 - - GET /_db_updates?feed=longpoll&timeout=0 200
+[info] [<0.115.0>] 127.0.0.1 - - GET /_users/_changes?since=1&feed=continuous&heartbeat=30000&include_docs=true 200
+[info] [<0.112.0>] 127.0.0.1 - - GET /_db_updates?feed=continuous&heartbeat=true 200
+[info] [<0.113.0>] 127.0.0.1 - - GET /plugins/ 200
+[info] [<0.114.0>] 127.0.0.1 - - GET /app/ 200
+[info] [<0.111.0>] 127.0.0.1 - - GET /_users/_all_docs?include_docs=true 200
+[info] [<0.177.0>] 127.0.0.1 - - GET /app//_changes?since=2&feed=continuous&heartbeat=30000 200
+[info] [<0.180.0>] 127.0.0.1 - - GET /plugins//_changes?since=1&feed=continuous&heartbeat=30000&include_docs=true 200
+[info] [<0.191.0>] 127.0.0.1 - - GET / 200
+[info] [<0.190.0>] 127.0.0.1 - - GET /_session 200
+[info] [<0.192.0>] 127.0.0.1 - - GET / 200
+[info] [<0.208.0>] 127.0.0.1 - - GET / 200
+[info] [<0.202.0>] 127.0.0.1 - - GET /_session 200
+[info] [<0.266.0>] 127.0.0.1 - - GET /_session 200
+[info] [<0.267.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=0&heartbeat=10000&feed=longpoll 401
+[info] [<0.203.0>] 127.0.0.1 - - GET /_users/_all_docs?include_docs=true&startkey=%22org.couchdb.user%3A%22&endkey=%22org.couchdb.user%3B%22 403
+[info] [<0.223.0>] 127.0.0.1 - - POST /_session 200
+[info] [<0.222.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=0&heartbeat=10000&feed=longpoll 200
+[info] [<0.254.0>] 127.0.0.1 - - GET /_users/_all_docs?include_docs=true&startkey=%22org.couchdb.user%3A%22&endkey=%22org.couchdb.user%3B%22 200
+[info] [<0.270.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.271.0>] 127.0.0.1 - - GET /_session 200
+[info] [<0.272.0>] 127.0.0.1 - - GET /app/config 200
+[info] [<0.207.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=0&heartbeat=10000&feed=longpoll 200
+[info] [<0.206.0>] 127.0.0.1 - - GET /_users/_all_docs?include_docs=true&startkey=%22org.couchdb.user%3A%22&endkey=%22org.couchdb.user%3B%22 304
+[info] [<0.205.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.204.0>] 127.0.0.1 - - GET /plugins/plugin%2Fappconfig 404
+[info] [<0.211.0>] 127.0.0.1 - - GET /app/config?_=1398707560875 200
+[info] [<0.210.0>] 127.0.0.1 - - GET / 200
+[info] [<0.307.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.320.0>] 127.0.0.1 - - GET /app/config?_=1398707560876 200
+[info] [<0.217.0>] 127.0.0.1 - - PUT /app/config 201
+[info] [<0.216.0>] 127.0.0.1 - - GET /app/config 200
+[info] [<0.213.0>] 127.0.0.1 - - GET /plugins/plugin%2Femail 404
+[info] [<0.329.0>] 127.0.0.1 - - GET /plugins/plugin%2Fusers 404
+[info] [<0.212.0>] 127.0.0.1 - - GET /_users/_all_docs?include_docs=true&startkey=%22org.couchdb.user%3A%22&endkey=%22org.couchdb.user%3B%22 304
+[info] [<0.324.0>] 127.0.0.1 - - GET /plugins/plugin%2Fappconfig 404
+[info] [<0.325.0>] 127.0.0.1 - - GET /app/config?_=1398707595106 200
+[info] [<0.298.0>] 127.0.0.1 - - GET / 200
+[info] [<0.278.0>] 127.0.0.1 - - GET /plugins/plugin%2Fappconfig 404
+[info] [<0.281.0>] 127.0.0.1 - - GET /app/config?_=1398707602060 200
+[info] [<0.352.0>] 127.0.0.1 - - GET /plugins/plugin%2Femail 404
+[info] [<0.335.0>] 127.0.0.1 - - GET /_session 200
+[info] [<0.358.0>] 127.0.0.1 - - GET /app/config 200
+[info] [<0.353.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=0&heartbeat=10000&feed=longpoll 200
+[info] [<0.280.0>] 127.0.0.1 - - GET /_users/_all_docs?include_docs=true&startkey=%22org.couchdb.user%3A%22&endkey=%22org.couchdb.user%3B%22 304
+[info] [<0.283.0>] 127.0.0.1 - - GET /plugins/plugin%2Femail 404
+[info] [<0.285.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.286.0>] 127.0.0.1 - - GET /plugins/plugin%2Fappconfig 404
+[info] [<0.288.0>] 127.0.0.1 - - GET /app/config?_=1398707610463 200
+[info] [<0.371.0>] 127.0.0.1 - - GET / 200
+[info] [<0.349.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.396.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.424.0>] 127.0.0.1 - - GET / 200
+[info] [<0.430.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.394.0>] 127.0.0.1 - - GET / 200
+[info] [<0.296.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.372.0>] 127.0.0.1 - - GET / 200
+[info] [<0.482.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.511.0>] 127.0.0.1 - - GET / 200
+[info] [<0.531.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.464.0>] 127.0.0.1 - - GET / 200
+[info] [<0.540.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.569.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.597.0>] 127.0.0.1 - - GET / 200
+[info] [<0.601.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.366.0>] 127.0.0.1 - - GET / 200
+[info] [<0.626.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.334.0>] 127.0.0.1 - - GET / 200
+[info] [<0.655.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+Apache CouchDB has been shutdown.
+Apache CouchDB has been shutdown.
+
+Apache CouchDB has started, time to relax.
+Apache CouchDB 1.5.0 (LogLevel=info) is starting.
+Apache CouchDB has started. Time to relax.
+[info] [<0.31.0>] Apache CouchDB has started on http://127.0.0.1:6003/
+[info] [<0.105.0>] 127.0.0.1 - - GET / 200
+[info] [<0.106.0>] 127.0.0.1 - - HEAD /_users/_all_docs 403
+[info] [<0.107.0>] 127.0.0.1 - - HEAD /_users/_all_docs 200
+[error] [<0.151.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/app.couch: file already exists
+[info] [<0.108.0>] 127.0.0.1 - - PUT /app 412
+[info] [<0.109.0>] 127.0.0.1 - - PUT /app/_security 200
+[info] [<0.110.0>] 127.0.0.1 - - PUT /app/config 409
+[error] [<0.165.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/plugins.couch: file already exists
+[info] [<0.111.0>] 127.0.0.1 - - PUT /plugins 412
+[info] [<0.112.0>] 127.0.0.1 - - PUT /plugins/_security 200
+[info] [<0.115.0>] 127.0.0.1 - - GET / 200
+[info] [<0.113.0>] 127.0.0.1 - - GET /app/config 200
+[info] [<0.117.0>] 127.0.0.1 - - GET /_users 200
+[info] [<0.114.0>] 127.0.0.1 - - GET /plugins/_all_docs?include_docs=true 200
+[info] [<0.116.0>] 127.0.0.1 - - GET /_db_updates?feed=longpoll&timeout=0 200
+[info] [<0.118.0>] 127.0.0.1 - - GET /_users/_changes?since=1&feed=continuous&heartbeat=30000&include_docs=true 200
+[info] [<0.146.0>] 127.0.0.1 - - GET /_db_updates?feed=continuous&heartbeat=true 200
+[info] [<0.119.0>] 127.0.0.1 - - GET /app/ 200
+[info] [<0.120.0>] 127.0.0.1 - - GET /plugins/ 200
+[info] [<0.148.0>] 127.0.0.1 - - GET /_users/_all_docs?include_docs=true 200
+[info] [<0.149.0>] 127.0.0.1 - - GET /app//_changes?since=4&feed=continuous&heartbeat=30000 200
+[info] [<0.150.0>] 127.0.0.1 - - GET /plugins//_changes?since=2&feed=continuous&heartbeat=30000&include_docs=true 200
+[info] [<0.178.0>] 127.0.0.1 - - GET / 200
+[info] [<0.177.0>] 127.0.0.1 - - GET /_session 200
+[error] [<0.199.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.179.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37 404
+[info] [<0.153.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.209.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.196.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.217.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.208.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.224.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.163.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.232.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.203.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.240.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.231.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.248.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.239.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.216.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.258.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.247.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.223.0>] 127.0.0.1 - - GET / 200
+[error] [<0.267.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.257.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.266.0>] 127.0.0.1 - - GET / 200
+[info] [<0.265.0>] 127.0.0.1 - - GET /_session 200
+[error] [<0.275.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.167.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37 404
+[error] [<0.282.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.254.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.289.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.164.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.297.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.281.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.305.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.288.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.313.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.304.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.197.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.323.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.312.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.331.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.322.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.330.0>] 127.0.0.1 - - GET / 200
+[error] [<0.340.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.316.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.348.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.338.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.356.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.347.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.364.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.355.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.198.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.374.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.363.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.382.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.339.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.390.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.373.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.398.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.389.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.368.0>] 127.0.0.1 - - GET / 200
+[error] [<0.406.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.180.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.413.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.296.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.421.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.397.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.381.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.431.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.420.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.439.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.430.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.447.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.438.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.455.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.446.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.463.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.454.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.471.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.424.0>] 127.0.0.1 - - GET / 200
+[info] [<0.462.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.404.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.482.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.470.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.490.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.481.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.498.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.489.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.506.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.497.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.514.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.473.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.522.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.505.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.412.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.532.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.521.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.476.0>] 127.0.0.1 - - GET / 200
+[error] [<0.540.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.405.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.548.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.538.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.556.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.547.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.564.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.555.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.572.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.563.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.580.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.571.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.539.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.590.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.579.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.598.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.583.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.181.0>] 127.0.0.1 - - GET / 200
+[error] [<0.606.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.531.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.614.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.605.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.622.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.613.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.630.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.621.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.513.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.640.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.635.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.648.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.629.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.656.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.647.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.664.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.655.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.603.0>] 127.0.0.1 - - GET / 200
+[error] [<0.672.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.668.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.680.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.671.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.688.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.679.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.597.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.698.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.687.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.706.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.697.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.714.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.705.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.722.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.713.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.730.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.721.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.691.0>] 127.0.0.1 - - GET / 200
+[error] [<0.739.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.729.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.639.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.749.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.738.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.757.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.748.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.765.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.756.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.773.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.764.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.781.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.772.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.789.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.780.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.733.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.663.0>] 127.0.0.1 - - GET / 200
+[error] [<0.799.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.743.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.807.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.798.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.815.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.797.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.823.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.814.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.831.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.822.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.839.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.830.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.847.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.838.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.527.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.857.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.846.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.788.0>] 127.0.0.1 - - GET / 200
+[error] [<0.865.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.794.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.873.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.863.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.881.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.872.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.889.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.880.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.897.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.888.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.589.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.907.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.896.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.915.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.906.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.923.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.914.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.864.0>] 127.0.0.1 - - GET / 200
+[error] [<0.931.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.856.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.939.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.274.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.947.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.273.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.955.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.272.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.806.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.965.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.954.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.973.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.964.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.981.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.972.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.989.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.980.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.928.0>] 127.0.0.1 - - GET / 200
+[error] [<0.997.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.993.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1005.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.996.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.902.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1015.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1004.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1023.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1014.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1031.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1022.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1039.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1030.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1047.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1038.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1055.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1046.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.922.0>] 127.0.0.1 - - GET / 200
+[info] [<0.930.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1066.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1054.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1074.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1065.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1082.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1073.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1090.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1081.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1098.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1089.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1106.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1097.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1114.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1105.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1010.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.988.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1124.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.946.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1132.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1122.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1139.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1131.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1147.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1138.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1155.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1146.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1163.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1154.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1062.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1173.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1162.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1180.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1113.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1188.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1058.0>] 127.0.0.1 - - GET / 200
+[info] [<0.1179.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1197.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1187.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1205.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1196.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1213.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1204.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1221.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1212.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1117.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1231.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1220.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1239.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1230.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1247.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1238.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1172.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1255.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1123.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1263.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1253.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1271.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1262.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1169.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1281.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1270.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1289.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1280.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1297.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1288.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1305.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.183.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1312.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1246.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1304.0>] 127.0.0.1 - - GET /_session 200
+[info] [<0.184.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1319.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.187.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37 404
+[error] [<0.1326.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1311.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1333.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1296.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1224.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1343.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1332.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1351.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1342.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1359.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1350.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1367.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1358.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1375.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1366.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1254.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1384.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1374.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1276.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1394.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1383.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1402.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.185.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.958.0>] 127.0.0.1 - - GET /_session 200
+[info] [<0.938.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1408.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.850.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37 404
+[error] [<0.1415.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1317.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1422.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1325.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1393.0>] 127.0.0.1 - - GET /_session 200
+[info] [<0.1382.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1430.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1389.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37 404
+[error] [<0.1437.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1337.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1444.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1406.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1428.0>] 127.0.0.1 - - GET / 200
+[info] [<0.1427.0>] 127.0.0.1 - - GET /_session 200
+[error] [<0.1452.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1429.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37 404
+[error] [<0.1459.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1436.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1190.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1468.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1405.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1476.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1467.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1484.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1475.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1492.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1483.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1500.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1491.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1508.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1499.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1407.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[info] [<0.1513.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1519.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1421.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1527.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1507.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1535.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1526.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1543.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1534.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1551.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1542.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1559.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1550.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1462.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1569.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1558.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1577.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1568.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1565.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1585.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1414.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1593.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1583.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1601.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1584.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1609.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1600.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1617.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1608.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1458.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1627.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1616.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1635.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1626.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1643.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1634.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1318.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1651.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1576.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1659.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1650.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1667.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1658.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1316.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1677.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1666.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1685.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1676.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1693.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1517.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1701.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1684.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1709.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1700.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1648.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1717.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1713.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1725.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1716.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1621.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1735.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1724.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1743.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1734.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1751.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1742.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1759.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1750.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1767.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1758.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1775.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1766.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1642.0>] 127.0.0.1 - - GET / 200
+[info] [<0.1673.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1786.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1774.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1794.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1785.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1802.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1793.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1810.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1801.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1818.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1809.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1826.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1817.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1518.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1836.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1825.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1692.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1844.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1708.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1852.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1842.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1860.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1851.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1868.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1859.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1876.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1867.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1884.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1875.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1781.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1894.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1843.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1902.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1883.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1832.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1910.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1835.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1918.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1909.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1926.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1917.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1934.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1925.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1729.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.1944.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1933.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1952.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1943.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1960.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1951.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1968.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1959.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1907.0>] 127.0.0.1 - - GET / 200
+[error] [<0.1976.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1972.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1984.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1975.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.1992.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1983.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1592.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.2002.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1940.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2010.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1991.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2018.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2009.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2026.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2017.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2034.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2025.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1901.0>] 127.0.0.1 - - GET / 200
+[error] [<0.2043.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2033.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1967.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.2053.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2042.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2061.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2052.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2069.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2060.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2077.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2068.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2085.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2076.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2093.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2084.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1996.0>] 127.0.0.1 - - GET / 200
+[error] [<0.2101.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.1778.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1888.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.2111.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2099.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2119.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2110.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2127.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2118.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2134.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2037.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2142.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2092.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2150.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2141.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.2048.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.2160.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2149.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.2159.0>] 127.0.0.1 - - GET / 200
+[error] [<0.2169.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2133.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2177.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2167.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2185.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2176.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2193.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2184.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2201.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2192.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.2104.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.2211.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2200.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2219.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2210.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2227.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2218.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.2168.0>] 127.0.0.1 - - GET / 200
+[error] [<0.2235.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2126.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2243.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2234.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2251.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2242.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2259.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2250.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.1893.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.2269.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2258.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2277.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2268.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2285.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2276.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2293.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2284.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.2226.0>] 127.0.0.1 - - GET / 200
+[error] [<0.2301.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2297.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2309.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2300.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[info] [<0.2207.0>] 127.0.0.1 - - GET /_users/_changes?include_docs=true&since=1&heartbeat=10000&feed=longpoll 200
+[error] [<0.2319.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2308.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404
+[error] [<0.2327.0>] Could not open file /Users/hipsterbrown/Documents/Projects/fdas-ftw/hoodie/trooper/data/user/s1rvxkf.couch: no such file or directory
+[info] [<0.2318.0>] 127.0.0.1 - - GET /user%2Fs1rvxkf/_changes?include_docs=true&since=37&heartbeat=10000&feed=longpoll 404

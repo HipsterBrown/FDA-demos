@@ -1,0 +1,22 @@
+section {
+  h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding: 1em 0;
+  }
+
+  article.tip {
+    padding: 2em;
+    background: $light-yellow;
+    border-radius: 6px;
+    margin: 0 0 2em;
+    border: 2px solid darken($light-yellow, 30%);
+    box-shadow: 0 4px 0 darken($light-yellow, 60%);
+  }
+
+  &.login-form {
+    p:last-of-type {
+      padding: 1em 0;
+    }
+  }
+}
