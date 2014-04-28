@@ -1,12 +1,6 @@
 $( document ).ready(function() {
   'use stict';
 
-  $('body').on('click', 'button.add-tip', function(e) {
-    var login = $('section.login-form');
-
-    login.toggleClass('hide');
-  });
-
   $('section.login-form').on('click', 'button.signup', function(e) {
     var signup = $('section.signup-form');
     var parent = $(this).parents('section');
@@ -17,9 +11,34 @@ $( document ).ready(function() {
   //Initialize Firebase connection
   var base = new Firebase('https://brilliant-fire-3777.firebaseio.com');
 
+  var currentUser;
+
   //Initialize Firebase Simple Login connection
   var auth = new FirebaseSimpleLogin(base, function(error, user) {
+    if (error) {
+      alert(error);
+      return;
+    }
+    if (user) {
+      //alert(user.email);
+      currentUser = {
+        email: user.email,
+        id: user.id,
+        username: user.email.split('@', 1),
+        loggedIn: true
+      };
+      $('section.tip-form').toggleClass('hide');
+      return currentUser;
+    }
+  });
 
+  $('body').on('click', 'button.add-tip', function(e) {
+    var login = $('section.login-form');
+    if ( currentUser ) {
+      $('section.tip-form').toggleClass('hide');
+    } else {
+      login.toggleClass('hide');
+    }
   });
 
   //Create tip list === firebaseio.com/tips
@@ -60,4 +79,74 @@ $( document ).ready(function() {
     }
   });
   */
+
+  var pushTip = function(tipTitle, tipContent, tipAuthor) {
+    tips.push({
+      title: tipTitle,
+      content: tipContent,
+      author: tipAuthor,
+      submittedOn: new Date().toString()
+    }, function(error) {
+      if (error) {
+        alert('Sorry about that Trooper! Please try submitting again.');
+      } else {
+        $('section.tip-form').toggleClass('hide');
+      }
+    });
+  };
+
+  //Login flow
+
+  $('section.signup-form').on('click', 'input[type="submit"]', function(e) {
+    e.preventDefault();
+    var username = $('#signup-name').val(),
+        email = $('#signup-email').val(),
+        password = $('#signup-pass').val(),
+        form = $('section.signup-form');
+
+    console.log(username + ' ' + email + ' ' + password);
+
+    auth.createUser(email, password, function(error, user) {
+      if (!error) {
+        form.toggleClass('hide');
+        $('section.tip-form').toggleClass('hide');
+      }
+    });
+
+  });
+
+
+  $('section.login-form').on('click', 'input[type="submit"]', function(e) {
+    e.preventDefault();
+    var email = $('#email').val(),
+        password = $('#password').val(),
+        form = $('section.login-form');
+
+    auth.login('password', {
+      email: email,
+      password: password,
+      debug: true
+    });
+
+    form.toggleClass('hide');
+
+  });
+
+  $('section.tip-form').on('click', 'input[type="submit"]', function(e) {
+    e.preventDefault();
+    var title = $('#tip-title').val(),
+        content = $('#tip-content').val(),
+        form = $('section.tip-form');
+
+    console.log(title + ' ' + content);
+
+    pushTip(title, content, currentUser.username);
+  });
+
+  $('footer').on('click', 'button.logout', function(e) {
+    auth.logout();
+    document.location.reload();
+  });
+
+
 });
