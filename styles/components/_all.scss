@@ -1,6 +1,7 @@
 @import 'footer';
 @import 'header';
 @import 'states';
+@import 'forms';
 
 * {
   margin: 0;
@@ -10,6 +11,7 @@
 
 body {
   @include box(vertical, start, center);
+  background: $base-body-color;
   padding: 0 5em;
 }
 
