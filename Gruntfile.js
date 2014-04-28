@@ -10,7 +10,8 @@ module.exports = function(grunt) {
         },
         files: {
           'styles/app.css' : 'styles/app.scss',
-          'firebase/app.css' : 'styles/app.scss'
+          'firebase/app.css' : 'styles/app.scss',
+          'hoodie/trooper/www/assets/css/app.css' : 'styles/app.scss'
         }
       }
     },
