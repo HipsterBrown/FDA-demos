@@ -1,6 +1,7 @@
 $( document ).ready(function() {
   'use stict';
 
+  //New user interaction
   $('section.login-form').on('click', 'button.signup', function(e) {
     var signup = $('section.signup-form');
     var parent = $(this).parents('section');
@@ -32,6 +33,7 @@ $( document ).ready(function() {
     }
   });
 
+  //Check for loggedIn user and show appropriate form
   $('body').on('click', 'button.add-tip', function(e) {
     var login = $('section.login-form');
     if ( currentUser ) {
@@ -52,6 +54,7 @@ $( document ).ready(function() {
     submittedOn: DateToString
   */
 
+  // Check for new tips and add them to the list
   tips.on('child_added', function(tip) {
     console.log(tip.name());
     tip = tip.val();
@@ -80,6 +83,7 @@ $( document ).ready(function() {
   });
   */
 
+  // Function to add a tip to the firebase database
   var pushTip = function(tipTitle, tipContent, tipAuthor) {
     tips.push({
       title: tipTitle,
@@ -143,6 +147,7 @@ $( document ).ready(function() {
     pushTip(title, content, currentUser.username);
   });
 
+  // Simple logout
   $('footer').on('click', 'button.logout', function(e) {
     auth.logout();
     document.location.reload();
