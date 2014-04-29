@@ -35,22 +35,6 @@ module.exports = function(grunt) {
           useAvailablePort: true,
           keepalive: true
         }
-      },
-      hoodie: {
-        options: {
-          port: 13001,
-          base: 'hoodie',
-          useAvailablePort: true,
-          keepalive: true
-        }
-      },
-      parse: {
-        options: {
-          port: 13002,
-          base: 'parse',
-          useAvailablePort: true,
-          keepalive: true
-        }
       }
     },
 
@@ -77,6 +61,4 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['watch']);
 
   grunt.registerTask('serveFire', ['connect:firebase']);
-  grunt.registerTask('serveHood', ['connect:hoodie']);
-  grunt.registerTask('servePars', ['connect:parse']);
 };

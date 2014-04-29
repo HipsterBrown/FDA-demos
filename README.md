@@ -13,10 +13,11 @@ I learned how to use Firebase and Parse from Codecademy's [API Track](http://www
 
 2. Then run: `npm install` , which should install all the grunt plugins and dependencies.
 
-3. To start the app servers:
+3. Add the Hoodie command line interface to work with the hoodie app. Follow the appropriate direction here: [Hoodie](http://hood.ie/#installation)
+
+4. To start the app servers:
 
  - For Firebase: `grunt serveFire`
- - For Parse: `grunt servePars`
- - For Hoodie: (fill in hoodie serve code here)
+ - For Hoodie: `cd hoodie/trooper && hoodie start`
 
-4. If you make any edits to the sass or javascript files, make sure you're running `grunt` in another command line window to watch for changes and reload the page.
+5. If you make any edits to the sass or javascript files, make sure you're running `grunt` in another command line window to watch for changes and reload the page.
