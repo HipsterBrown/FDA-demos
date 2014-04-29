@@ -21,18 +21,11 @@ $( document ).ready(function() {
   var hoodie  = new Hoodie();
 
   // initial load of all todo items from the store
-  hoodie.store.findAll('tips').then( function(tips) {
-    tips.sort( sortByCreatedAt ).forEach( addTip );
+  hoodie.store.findAll('tip').then( function(tip) {
+    tip.forEach( addTip );
   });
 
-  function sortByCreatedAt(a, b) {
-    return a.createdAt > b.createdAt;
-  }
 
-  // when a new tip gets stored, add it to the UI
-  hoodie.store.on('add:tip', addTips);
-  // clear tip list when the get wiped from store
-  hoodie.account.on('signout', clearTips);
 
   //New user interaction
   $('section.login-form').on('click', 'button.signup', function(e) {
@@ -45,11 +38,12 @@ $( document ).ready(function() {
   //Check for loggedIn user and show appropriate form
   $('body').on('click', 'button.add-tip', function(e) {
     var login = $('section.login-form');
-    //if ( currentUser ) {
-      //$('section.tip-form').toggleClass('hide');
-    //} else {
+    if ( hoodie.account.username !== undefined ) {
+      alert(hoodie.account.username);
+      $('section.tip-form').toggleClass('hide');
+    } else {
       login.toggleClass('hide');
-    //}
+    }
   });
 
   /*
@@ -59,37 +53,16 @@ $( document ).ready(function() {
     author: String
     submittedOn: DateToString
   */
-  /*
-  // Check for new tips and add them to the list
-  tips.on('child_added', function(tip) {
-    console.log(tip.name());
-    tip = tip.val();
-    var html = '<article class="tip">',
-        contentArea = $('section.tips');
-    html += '<h1 class="title">'+ tip.title +'</h1>';
-    html += '<p class="smaller submitted">Submitted On: <span class="date">'+ tip.submittedOn +'</span></p>';
-    html += '<p class="content">'+ tip.content +'</p>';
-    html += '<p class="thanks">Thank You <span class="author">'+ tip.author +'</span> for the helpful tip!';
-    console.log(html);
-    contentArea.append(html);
-  });
-  */
-  /*
+
   // Function to add a tip to the firebase database
-  var pushTip = function(tipTitle, tipContent, tipAuthor) {
-    tips.push({
+  pushTip = function(tipTitle, tipContent, tipAuthor) {
+    hoodie.store.add('tip', {
       title: tipTitle,
       content: tipContent,
       author: tipAuthor,
       submittedOn: new Date().toString()
-    }, function(error) {
-      if (error) {
-        alert('Sorry about that Trooper! Please try submitting again.');
-      } else {
-        $('section.tip-form').toggleClass('hide');
-      }
     });
-  }; */
+  };
 
   //Login flow
 
@@ -109,6 +82,13 @@ $( document ).ready(function() {
       }
     }); */
 
+    hoodie.account.signUp(email, password);
+
+  });
+
+  hoodie.account.on('signup', function(user) {
+    //alert(hoodie.account.username);
+    $('section.signup-form').toggleClass('hide');
   });
 
 
@@ -123,8 +103,23 @@ $( document ).ready(function() {
       password: password,
       debug: true
     }); */
+    hoodie.account.signIn(email, password);
 
-    form.toggleClass('hide');
+    //form.toggleClass('hide');
+
+  });
+
+  hoodie.account.on('signin', function(user) {
+    alert(hoodie.account.username + ' is now signed in!');
+    if ( !( $('section.signup-form').hasClass('hide') ) ) {
+      $('section.signup-form').toggleClass('hide');
+    }
+    else if ( !( $('section.login-form').hasClass('hide') ) ) {
+      $('section.login-form').toggleClass('hide');
+      $('section.tip-form').toggleClass('hide');
+    } else {
+      $('section.tip-form').toggleClass('hide');
+    }
 
   });
 
@@ -132,17 +127,53 @@ $( document ).ready(function() {
     e.preventDefault();
     var title = $('#tip-title').val(),
         content = $('#tip-content').val(),
-        form = $('section.tip-form');
+        username = hoodie.account.username.split('@', 1);
 
     console.log(title + ' ' + content);
-
-    //pushTip(title, content, currentUser.username);
+    pushTip(title, content, username);
+    $('section.tip-form').toggleClass('hide');
   });
+
+  /*
+  // Check for new tips and add them to the list
+  tips.on('child_added', function(tip) {
+    console.log(tip.name());
+    tip = tip.val();
+    var html = '<article class="tip">',
+        contentArea = $('section.tips');
+    html += '<h1 class="title">'+ tip.title +'</h1>';
+    html += '<p class="smaller submitted">Submitted On: <span class="date">'+ tip.submittedOn +'</span></p>';
+    html += '<p class="content">'+ tip.content +'</p>';
+    html += '<p class="thanks">Thank You <span class="author">'+ tip.author +'</span> for the helpful tip!';
+    console.log(html);
+    contentArea.prepend(html);
+  });
+  */
+
+  function addTip( tip ) {
+    var html = '<article class="tip">',
+        contentArea = $('section.tips');
+    html += '<h1 class="title">'+ tip.title +'</h1>';
+    html += '<p class="smaller submitted">Submitted On: <span class="date">'+ tip.submittedOn +'</span></p>';
+    html += '<p class="content">'+ tip.content +'</p>';
+    html += '<p class="thanks">Thank You <span class="author">'+ tip.author +'</span> for the helpful tip!';
+
+    $(html).insertAfter('section.tips > h2');
+  }
+
+  // when a new tip gets stored, add it to the UI
+  hoodie.store.on('add:tip', addTip);
 
   // Simple logout
   $('footer').on('click', 'button.logout', function(e) {
-    //auth.logout();
-    document.location.reload();
+    hoodie.account.signOut();
+  });
+
+  hoodie.account.on('signout', function(user) {
+    if ( !( $('section.tip-form').hasClass('hide') ) ) {
+      $('section.tip-form').toggleClass('hide');
+    }
+    alert('Thanks for contributing! You\'ve now been logged out.');
   });
 
 

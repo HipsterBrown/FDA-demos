@@ -1,0 +1,100 @@
+<div class="container">
+  <div class="hero-unit">
+    <h1>MyHoodie</h1>
+    <p>
+      hoodie playground.
+    </p>
+
+    <div class="hoodie-accountbar">
+
+      <div class="hoodie-account-signedout">
+        <span class="btn-group">
+          <button class="btn btn-small btn-inverse" data-hoodie-action="signup">Sign Up</button>
+          <button class="btn btn-small dropdown-toggle btn-inverse" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="#" data-hoodie-action="signin">Sign In</a></li>
+            <li><a href="#" data-hoodie-action="resetpassword">Reset Password</a></li>
+            <li><a href="#" data-hoodie-action="destroy">Clear local data</a></li>
+          </ul>
+        </span>
+      </div><!-- /.hoodie-account-signedout -->
+
+      <div class="hoodie-account-signedin">
+        Hello,
+        <span class="hoodie-username"><!-- usern name will be filled in here --></span>
+        <span class="btn-group">
+          <button class="btn btn-small btn-inverse" data-hoodie-action="signout">Sign Out</button>
+          <button class="btn btn-small dropdown-toggle btn-inverse" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="#" data-hoodie-action="changepassword">Change Password</a></li>
+            <li><a href="#" data-hoodie-action="changeusername">Change Username</a></li>
+            <li><a href="#" data-hoodie-action="destroy">Destroy Account</a></li>
+          </ul>
+        </span>
+      </div><!-- /.hoodie-account-signedin -->
+
+      <div class="hoodie-account-error">
+        Hello,
+        <span class="hoodie-username"><!-- username will be filled in here --></span>.
+        <span class="btn-group">
+          <button class="btn btn-small btn-danger" data-hoodie-action="signin">Authentication error: Sign in again</button>
+          <button class="btn btn-small dropdown-toggle btn-danger" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="#" data-hoodie-action="signout">Sign out</a></li>
+          </ul>
+        </span>
+      </div><!-- /.hoodie-account-error -->
+    </div><!--/hoodieAccountBar -->
+  </div>
+
+  <div class="content">
+    <ul id="todolist"></ul>
+
+    <input type="text" id="todoinput"  placeholder="new todo ↵" />
+  </div>
+
+  <div class="code">
+<pre class="language-javascript"><code class="language-javascript">
+// initialize Hoodie
+var hoodie  = new Hoodie()
+
+// initial load of all todo items from the store
+hoodie.store.findAll('todo').then( function(todos) {
+todos.sort( sortByCreatedAt ).forEach( addTodo )
+})
+
+// when a new todo gets stored, add it to the UI
+hoodie.store.on('add:todo', addTodo)
+// when a user signs out, clear the todo list
+hoodie.account.on('signout', clearTodos)
+
+// handle creating a new task
+$('#todoinput').on('keypress', function(event) {
+if (event.keyCode == 13) { // ENTER
+hoodie.store.add('todo', {title: event.target.value});
+event.target.value = '';
+}
+})
+
+function addTodo( todo ) {
+$('#todolist').append('&lt;li&gt;'+todo.title+'&lt;/li&gt;');
+}
+function clearTodos() {
+$('#todolist').html('');
+}
+function sortByCreatedAt(a, b) {
+return a.createdAt &gt; b.createdAt
+}
+</code></pre>
+  </div><!-- /.code -->
+
+  <footer class="copy">
+    <p>&hearts; hood.ie 2014</p>
+  </footer>
+</div> <!-- /.container -->
