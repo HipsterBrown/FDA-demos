@@ -152,7 +152,6 @@
   // Simple logout
   $('footer').on('click', 'button.logout', function(e) {
     auth.logout();
-    document.location.reload();
   });
 
 
