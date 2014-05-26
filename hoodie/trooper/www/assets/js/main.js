@@ -20,7 +20,7 @@ $( document ).ready(function() {
   // initialize Hoodie
   var hoodie  = new Hoodie();
 
-  // initial load of all todo items from the store
+  // initial load of all tips from the store
   hoodie.store.findAll('tip').then( function(tip) {
     tip.forEach( addTip );
   });

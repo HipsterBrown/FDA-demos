@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+ $( document ).ready(function() {
   'use stict';
 
   //New user interaction
@@ -130,7 +130,8 @@ $( document ).ready(function() {
     auth.login('password', {
       email: email,
       password: password,
-      debug: true
+      debug: true,
+      rememberMe: true
     });
 
     form.toggleClass('hide');
