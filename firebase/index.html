@@ -37,10 +37,31 @@
           <label for="password">Password:</label>
           <input type="password" name="password" id="password">
         </p>
-        <input type="submit" name="submit" value="I'm Back!">
+        <input type="submit" name="submit" value="I'm Back!"> <span id="result"></span>
+        <p>
+          Forget Your Password? <a href="#" class="forget-pass">Click here to receive a temporary password</a>then <a href="#" class="change-pass">click here to change it.</a>
+        </p>
         <p>
           Are you a newber trooper? <button name="signup-button" class="signup">Signup Dude!</button>
         </p>
+      </section>
+
+      <section class="pass-form hide">
+        <h2>Reset Your Password</h2>
+        <p>
+          <label for="user-email">Account Email:</label>
+          <input type="text" name="user-email" id="user-email" placeholder="Yo Email, Yo">
+        </p>
+        <p>
+          <label for="temp-pass">Temporary Password:</label>
+          <input type="text" name="temp-pass" id="temp-pass" placeholder="Password sent in reset email">
+        </p>
+        <p>
+          <label for="new-pass">New Password:</label>
+          <input type="text" name="new-pass" id="new-pass" placeholder="SomethingSecure13^!">
+        </p>
+        <input type="submit" name="pass-submit" value="Pass It On!">
+        <p id="pass-results"></p>
       </section>
 
       <section class="signup-form hide">

@@ -139,6 +139,54 @@
 
   });
 
+  $('a.forget-pass').on('click', function(e) {
+    e.preventDefault();
+
+    var email = $('#email').val(),
+      resultDiv = $('span#result');
+
+    if ( email === '' ) {
+      resultDiv.text('Please enter your email into the form');
+      return false;
+    }
+
+    auth.sendPasswordResetEmail(email, function(error, success) {
+      if ( error ) {
+        resultDiv.text(error);
+      } else {
+        resultDiv.text('Email sent!');
+      }
+    });
+
+  });
+
+  $('a.change-pass').on('click.change', function(e) {
+    e.preventDefault();
+
+    $('section.pass-form').toggleClass('hide');
+
+    $(this).off('click.change');
+  });
+
+  $('section.pass-form').on('click', 'input[type="submit"]', function(e) {
+    e.preventDefault();
+
+    var tempPass = $('section.pass-form').find('#temp-pass').val(),
+      newPass = $('section.pass-form').find('#new-pass').val(),
+      email = $('section.pass-form').find('#user-email').val(),
+      resultsDiv = $('section.pass-form').find('#pass-results'),
+      form = $('section.pass-form');
+
+    auth.changePassword(email, tempPass, newPass, function(error, success) {
+      if (!error) {
+        form.toggleClass('hide');
+        alert('Password successfully changed! Try logging in.');
+      } else {
+        resultsDiv.text(error + ' Please try again.');
+      }
+    });
+  });
+
   $('section.tip-form').on('click', 'input[type="submit"]', function(e) {
     e.preventDefault();
     var title = $('#tip-title').val(),
