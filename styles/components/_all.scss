@@ -13,14 +13,15 @@ body {
   @include box(vertical, start, center);
   background: $base-body-color;
   padding: 0 5em;
+
+  @media (max-width: 550px) {
+    padding: 0 1.2em;
+    font-size: 10px;
+  }
 }
 
-div.main {
-
-  section.tips {
-
-    article.tip {
-      font-size: 12px;
-    }
+button {
+  @media (max-width: 550px) {
+    width: 100%;
   }
 }
