@@ -105,18 +105,27 @@
 
   $('section.signup-form').on('click', 'input[type="submit"]', function(e) {
     e.preventDefault();
-    var username = $('#signup-name').val(),
-        email = $('#signup-email').val(),
+    var email = $('#signup-email').val(),
         password = $('#signup-pass').val(),
         form = $('section.signup-form');
 
-    console.log(username + ' ' + email + ' ' + password);
+    console.log(email + ' ' + password);
 
     auth.createUser(email, password, function(error, user) {
       if (!error) {
-        form.toggleClass('hide');
-        $('section.tip-form').toggleClass('hide');
-      }
+		var currentUser = {
+			  email: user.email,
+			  id: user.id,
+			  username: user.email.split('@', 1),
+			  loggedIn: true
+		  };
+        //form.toggleClass('hide');
+		alert('The page will now refresh. Then you can log in and start adding tips.\n I promise to make the process smoother in the future.\n Thank you for your patience.');
+		document.location.reload();
+        //$('section.tip-form').toggleClass('hide');
+      } else {
+		alert('Sorry, this seems to have been an error:\n ' + error + '\n Please refresh the page and try again.');
+	  }
     });
 
   });
@@ -191,11 +200,18 @@
     e.preventDefault();
     var title = $('#tip-title').val(),
         content = $('#tip-content').val(),
-        form = $('section.tip-form');
+        form = $('section.tip-form'),
+		author;
+
+	if (currentUser === 'undefined') {
+		author = 'Anon';
+	} else {
+		author = currentUser.username;
+	}
 
     console.log(title + ' ' + content);
 
-    pushTip(title, content, currentUser.username);
+    pushTip(title, content, author);
   });
 
   // Simple logout

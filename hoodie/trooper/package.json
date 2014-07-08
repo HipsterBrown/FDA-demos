@@ -21,6 +21,7 @@
       "hoodie-plugin-appconfig",
       "hoodie-plugin-email",
       "hoodie-plugin-users"
+      "hoodie-plugin-global-share"
     ]
   }
 }

@@ -157,7 +157,7 @@ $( document ).ready(function() {
     html += '<p class="smaller submitted">Submitted On: <span class="date">'+ tip.submittedOn +'</span></p>';
     html += '<p class="content">'+ tip.content +'</p>';
     html += '<p class="thanks">Thank You <span class="author">'+ tip.author +'</span> for the helpful tip!';
-
+    //hoodie.store.find('tip', tip.id).publish();
     $(html).insertAfter('section.tips > h2');
   }
 
